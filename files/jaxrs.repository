@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<repository lastmodified="20190918064218.371">
+<repository lastmodified="20190918010330.599">
    <resource id="io.swagger.annotations/1.5.13" symbolicname="io.swagger.annotations" version="1.5.13" presentationname="swagger-annotations" uri="https://repo1.maven.org/maven2/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar">
       <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
       <size>20654</size>
@@ -956,6 +956,54 @@
       <require name="package" filter="(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax.helpers</require>
       <require name="package" filter="(&amp;(package=javax.xml.bind.helpers)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.helpers</require>
       <require name="package" filter="(&amp;(package=javax.xml.bind.util)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.util</require>
+   </resource>
+   <resource id="javax.validation.api/1.1.0.Final" symbolicname="javax.validation.api" version="1.1.0.Final" presentationname="Bean Validation API" uri="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar">
+      <description>Bean Validation API</description>
+      <size>63777</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="javax.validation.api"/>
+         <p n="presentationname" v="Bean Validation API"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.groups"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.metadata"/>
+         <p n="uses:" v="javax.validation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation"/>
+         <p n="uses:" v="javax.validation.executable,javax.validation.metadata,javax.validation.spi,javax.validation.bootstrap"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.executable"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.constraintvalidation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.spi"/>
+         <p n="uses:" v="javax.validation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.bootstrap"/>
+         <p n="uses:" v="javax.validation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.constraints"/>
+         <p n="uses:" v="javax.validation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
    </resource>
    <resource id="org.apache.commons.lang3/3.9.0" symbolicname="org.apache.commons.lang3" version="3.9.0" presentationname="Apache Commons Lang" uri="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar">
       <description>Apache Commons Lang, a package of Java utility classes for the  classes that are in java.lang&apos;s hierarchy, or are considered to be so  standard as to justify existence in java.lang.</description>
