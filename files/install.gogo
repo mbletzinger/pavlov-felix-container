@@ -3,13 +3,7 @@ repos remove http://felix.apache.org/obr/releases.xml
 
 repos add file:///tmp/felix/repository.xml
 repos add file:///tmp/jaxrs/repository.xml
-repos add file:///tmp/slf4j/repository.xml
 repos add file:///tmp/pavlovjax/repository.xml
-repos add file:///tmp/reflections/repository.xml
-
-echo "Installing slf4j"
-obr:deploy -s slf4j.api
-obr:deploy -s slf4j.simple
 
 echo "Installing Felix extras"
 obr:deploy -ro -s org.apache.felix.http.servlet-api
@@ -44,10 +38,5 @@ obr:deploy -ro -s org.glassfish.jersey.core.jersey-server
 
 
 echo "Installing JAX-RS"
-obr:deploy -ro -s io.swagger.annotations
-obr:deploy -ro -s io.swagger.models
-obr:deploy -ro -s io.swagger.core
-obr:deploy -ro -s io.swagger.jaxrs
-#obr:deploy -ro -s io.swagger.jersey2.jaxrs
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.publisher
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.webconsole
