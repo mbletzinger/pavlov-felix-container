@@ -60,6 +60,16 @@ ADD files/pavlovjax/ /tmp/pavlovjax/
 ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.2.jar /opt/felix/current/bundle
 
 #
+# TEMPORARY - STORE REPOS FOR SCR
+#
+RUN mkdir -p /opt/felix/current/repos
+ADD files/felix.repository /opt/felix/current/repos/felix/repository.xml
+ADD files/jaxrs.repository /opt/felix/current/repos/jaxrs/repository.xml
+ADD files/slf4j.repository /opt/felix/current/repos/slf4j/repository.xml
+ADD files/pavlovjax/ /opt/felix/current/repos/pavlovjax/
+ADD files/reflections/ /opt/felix/current/repos/reflections/
+
+#
 # Install bundles with OBR
 #
 WORKDIR /opt/felix/current

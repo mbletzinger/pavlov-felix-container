@@ -1,6 +1,11 @@
 <?xml version="1.0" ?>
+<<<<<<< HEAD
 <repository lastmodified="20190917034545.143">
    <resource id="slf4j.api/1.8.0.beta4" symbolicname="slf4j.api" version="1.8.0.beta4" presentationname="slf4j-api" uri="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.8.0-beta4/slf4j-api-1.8.0-beta4.jar">
+=======
+<repository lastmodified="20190920013444.591">
+   <resource id="slf4j.api/1.7.28" symbolicname="slf4j.api" version="1.7.28" presentationname="slf4j-api" uri="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28.jar">
+>>>>>>> f1d4f6142b8cbc5c9ff81f09d39c5fdbd7e69a76
       <description>The slf4j API</description>
       <size>44213</size>
       <capability name="bundle">
