@@ -36,7 +36,6 @@ obr:deploy -ro -s jakarta.validation.jakarta.validation-api
 obr:deploy -ro -s org.glassfish.jersey.inject.jersey-hk2
 obr:deploy -ro -s org.glassfish.jersey.core.jersey-server
 
-
 echo "Installing JAX-RS"
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.publisher
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.webconsole

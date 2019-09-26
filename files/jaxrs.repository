@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<repository lastmodified="20190920013441.135">
+<repository lastmodified="20190923024844.520">
    <resource id="com.eclipsesource.jaxrs.provider.gson/2.3.0.201506221200" symbolicname="com.eclipsesource.jaxrs.provider.gson" version="2.3.0.201506221200" presentationname="JAX-RS Gson Provider" uri="https://repo1.maven.org/maven2/com/eclipsesource/jaxrs/provider-gson/2.3/provider-gson-2.3.jar">
       <size>5978</size>
       <capability name="bundle">
@@ -458,6 +458,66 @@
       <require name="package" filter="(&amp;(package=javax.crypto.spec)(version&gt;=0.0.0))" extend="false" multiple="false" optional="true">Import package javax.crypto.spec</require>
       <require name="package" filter="(&amp;(package=sun.misc)(version&gt;=0.0.0))" extend="false" multiple="false" optional="true">Import package sun.misc</require>
    </resource>
+   <resource id="jakarta.validation.jakarta.validation-api/2.0.1" symbolicname="jakarta.validation.jakarta.validation-api" version="2.0.1" presentationname="Bean Validation API" uri="https://repo1.maven.org/maven2/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar">
+      <description>Bean Validation API</description>
+      <size>93157</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="jakarta.validation.jakarta.validation-api"/>
+         <p n="presentationname" v="Bean Validation API"/>
+         <p n="version" t="version" v="2.0.1"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation"/>
+         <p n="version" t="version" v="2.0.1"/>
+         <p n="uses:" v="javax.validation.bootstrap,javax.validation.executable,javax.validation.metadata,javax.validation.spi,javax.validation.valueextraction"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.bootstrap"/>
+         <p n="version" t="version" v="2.0.1"/>
+         <p n="uses:" v="javax.validation"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.constraints"/>
+         <p n="version" t="version" v="2.0.1"/>
+         <p n="uses:" v="javax.validation"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.constraintvalidation"/>
+         <p n="version" t="version" v="2.0.1"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.executable"/>
+         <p n="version" t="version" v="2.0.1"/>
+         <p n="uses:" v="javax.validation"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.groups"/>
+         <p n="version" t="version" v="2.0.1"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.metadata"/>
+         <p n="version" t="version" v="2.0.1"/>
+         <p n="uses:" v="javax.validation"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.spi"/>
+         <p n="version" t="version" v="2.0.1"/>
+         <p n="uses:" v="javax.validation,javax.validation.valueextraction"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.valueextraction"/>
+         <p n="version" t="version" v="2.0.1"/>
+         <p n="uses:" v="javax.validation"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=javax.validation)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation</require>
+      <require name="package" filter="(&amp;(package=javax.validation.bootstrap)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.bootstrap</require>
+      <require name="package" filter="(&amp;(package=javax.validation.executable)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.executable</require>
+      <require name="package" filter="(&amp;(package=javax.validation.metadata)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.metadata</require>
+      <require name="package" filter="(&amp;(package=javax.validation.spi)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.spi</require>
+      <require name="package" filter="(&amp;(package=javax.validation.valueextraction)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.valueextraction</require>
+   </resource>
    <resource id="com.sun.activation.jakarta.activation/1.2.1" symbolicname="com.sun.activation.jakarta.activation" version="1.2.1" presentationname="JavaBeans Activation Framework" uri="https://repo1.maven.org/maven2/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar">
       <description>JavaBeans Activation Framework</description>
       <size>65690</size>
@@ -788,65 +848,53 @@
          <p n="version" t="version" v="1.3.5"/>
       </capability>
    </resource>
-   <resource id="jakarta.validation.jakarta.validation-api/2.0.1" symbolicname="jakarta.validation.jakarta.validation-api" version="2.0.1" presentationname="Bean Validation API" uri="https://repo1.maven.org/maven2/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar">
+   <resource id="javax.validation.api/1.1.0.Final" symbolicname="javax.validation.api" version="1.1.0.Final" presentationname="Bean Validation API" uri="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar">
       <description>Bean Validation API</description>
-      <size>93157</size>
+      <size>63777</size>
       <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
       <capability name="bundle">
-         <p n="symbolicname" v="jakarta.validation.jakarta.validation-api"/>
+         <p n="symbolicname" v="javax.validation.api"/>
          <p n="presentationname" v="Bean Validation API"/>
-         <p n="version" t="version" v="2.0.1"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
-         <p n="package" v="javax.validation"/>
-         <p n="version" t="version" v="2.0.1"/>
-         <p n="uses:" v="javax.validation.bootstrap,javax.validation.executable,javax.validation.metadata,javax.validation.spi,javax.validation.valueextraction"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.bootstrap"/>
-         <p n="version" t="version" v="2.0.1"/>
-         <p n="uses:" v="javax.validation"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.constraints"/>
-         <p n="version" t="version" v="2.0.1"/>
-         <p n="uses:" v="javax.validation"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.constraintvalidation"/>
-         <p n="version" t="version" v="2.0.1"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.executable"/>
-         <p n="version" t="version" v="2.0.1"/>
-         <p n="uses:" v="javax.validation"/>
-      </capability>
-      <capability name="package">
          <p n="package" v="javax.validation.groups"/>
-         <p n="version" t="version" v="2.0.1"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
       </capability>
       <capability name="package">
          <p n="package" v="javax.validation.metadata"/>
-         <p n="version" t="version" v="2.0.1"/>
          <p n="uses:" v="javax.validation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation"/>
+         <p n="uses:" v="javax.validation.executable,javax.validation.metadata,javax.validation.spi,javax.validation.bootstrap"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.executable"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.validation.constraintvalidation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
       </capability>
       <capability name="package">
          <p n="package" v="javax.validation.spi"/>
-         <p n="version" t="version" v="2.0.1"/>
-         <p n="uses:" v="javax.validation,javax.validation.valueextraction"/>
+         <p n="uses:" v="javax.validation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
       </capability>
       <capability name="package">
-         <p n="package" v="javax.validation.valueextraction"/>
-         <p n="version" t="version" v="2.0.1"/>
+         <p n="package" v="javax.validation.bootstrap"/>
          <p n="uses:" v="javax.validation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
       </capability>
-      <require name="package" filter="(&amp;(package=javax.validation)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation</require>
-      <require name="package" filter="(&amp;(package=javax.validation.bootstrap)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.bootstrap</require>
-      <require name="package" filter="(&amp;(package=javax.validation.executable)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.executable</require>
-      <require name="package" filter="(&amp;(package=javax.validation.metadata)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.metadata</require>
-      <require name="package" filter="(&amp;(package=javax.validation.spi)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.spi</require>
-      <require name="package" filter="(&amp;(package=javax.validation.valueextraction)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.valueextraction</require>
+      <capability name="package">
+         <p n="package" v="javax.validation.constraints"/>
+         <p n="uses:" v="javax.validation"/>
+         <p n="version" t="version" v="1.1.0.Final"/>
+      </capability>
    </resource>
    <resource id="jakarta.ws.rs-api/2.1.6" symbolicname="jakarta.ws.rs-api" version="2.1.6" presentationname="jakarta.ws.rs-api" uri="https://repo1.maven.org/maven2/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar">
       <description>Jakarta RESTful Web Services API</description>
@@ -1004,6 +1052,40 @@
          <p n="uses:" v="javax.validation"/>
          <p n="version" t="version" v="1.1.0.Final"/>
       </capability>
+   </resource>
+   <resource id="javax.servlet-api/3.1.0" symbolicname="javax.servlet-api" version="3.1.0" presentationname="Java Servlet API" uri="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar">
+      <description>Java(TM) Servlet 3.1 API Design Specification</description>
+      <size>95806</size>
+      <license>https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="javax.servlet-api"/>
+         <p n="presentationname" v="Java Servlet API"/>
+         <p n="version" t="version" v="3.1.0"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet"/>
+         <p n="uses:" v="javax.servlet.descriptor,javax.servlet.annotation"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.descriptor"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.annotation"/>
+         <p n="uses:" v="javax.servlet"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.http"/>
+         <p n="uses:" v="javax.servlet"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=javax.servlet)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.annotation)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.descriptor)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.descriptor</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.http)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.http</require>
    </resource>
    <resource id="org.apache.commons.lang3/3.9.0" symbolicname="org.apache.commons.lang3" version="3.9.0" presentationname="Apache Commons Lang" uri="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar">
       <description>Apache Commons Lang, a package of Java utility classes for the  classes that are in java.lang&apos;s hierarchy, or are considered to be so  standard as to justify existence in java.lang.</description>
@@ -2265,5 +2347,39 @@
       <require name="package" filter="(&amp;(package=org.yaml.snakeyaml.scanner)(&amp;(version&gt;=1.25.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.yaml.snakeyaml.scanner</require>
       <require name="package" filter="(&amp;(package=org.yaml.snakeyaml.serializer)(&amp;(version&gt;=1.25.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.yaml.snakeyaml.serializer</require>
       <require name="package" filter="(&amp;(package=org.yaml.snakeyaml.tokens)(&amp;(version&gt;=1.25.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.yaml.snakeyaml.tokens</require>
+   </resource>
+   <resource id="javax.servlet-api/3.1.0" symbolicname="javax.servlet-api" version="3.1.0" presentationname="Java Servlet API" uri="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar">
+      <description>Java(TM) Servlet 3.1 API Design Specification</description>
+      <size>95806</size>
+      <license>https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="javax.servlet-api"/>
+         <p n="presentationname" v="Java Servlet API"/>
+         <p n="version" t="version" v="3.1.0"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet"/>
+         <p n="uses:" v="javax.servlet.descriptor,javax.servlet.annotation"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.descriptor"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.annotation"/>
+         <p n="uses:" v="javax.servlet"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.http"/>
+         <p n="uses:" v="javax.servlet"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=javax.servlet)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.annotation)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.descriptor)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.descriptor</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.http)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.http</require>
    </resource>
 </repository>
